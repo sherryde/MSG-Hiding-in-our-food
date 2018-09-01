@@ -1,6 +1,7 @@
 @media screen and (min-width: 25em){
   div {  
-    font-size: calc( 12px + (18 - 12) * (75vw - 300px) / (600 - 300));
+    font-size: calc( 12px + (18 - 12) * (75vw - 300px) / (600 - 300) );
+}
 }
 body {
 	background: linear-gradient(-45deg, rgba(252, 248, 196, 0.76), rgb(111, 160, 89));
@@ -8,12 +9,43 @@ body {
   padding: 0;
 }
 /* header styles start here */
-
+/**, *::before, *::after {box-sizing: border-box; }*/
 header {
   text-align: center;
+  z-index: 998;
+  width: 100%;
+  padding-top: 0;
+}
+.nav {
   z-index: 999;
   width: 100%;
-  padding-top: 5%;
+  height: 3.5em;
+  margin: 0;
+  background-position-x: absolute;
+  padding-top: 0;
+  background: #1b2b3f; 
+}
+.nav-toggle {
+  width: 100%;
+  /* text-align: left; */
+  text-align: right;
+  position: absolute;
+  color: #fcf8c4c2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 75%;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  margin-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: rgba(252, 248, 196, 0.76);
 }
 section {
   z-index: 999;
@@ -54,7 +86,6 @@ section {
   position: static;
   padding-left: 5%;
 }
-
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -102,4 +133,5 @@ th, td {
   width: 33.3333%;
 }
 
+  
   
